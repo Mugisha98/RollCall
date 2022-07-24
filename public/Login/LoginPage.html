@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Role Call System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Login/style.css" />
+<script src="./Login/LoginPage.js"></script>
+</head>
+<body>
+
+<h2 class="login-header">Welcome to KEA management system</h2>
+
+<form class="login-form" onsubmit="event.preventDefault(); login()">
+  <div class="imgcontainer">
+    <img src="keaLogo.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input id="username" type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+        
+    <input type="submit" value="Login" class="login-button" id="login-button">
+    <div id="error-msg"></div>
+  </div>
+
+</form>
+
+</body>
+</html>

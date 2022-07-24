@@ -1,0 +1,39 @@
+{
+  "name": "rollcall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "npm run test --coverageDirectory='reports'  --coverage",
+    "test:ci": "npm run test -- --watchAll=false --reporters=default --reporters=jest-junit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mugisha98/RollCall.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mugisha98/RollCall/issues"
+  },
+  "homepage": "https://github.com/mugisha98/RollCall#readme",
+  "dependencies": {
+    "axios": "0.27.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "chromedriver": "^101.0.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mockingoose": "^2.15.2",
+    "mongoose": "^6.3.2",
+    "nodemon": "^2.0.16",
+    "selenium-webdriver": "^4.1.2"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}

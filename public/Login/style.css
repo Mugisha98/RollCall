@@ -1,0 +1,249 @@
+/* ------------LOGIN form STYLE---------*/
+
+body {font-family: Arial, Helvetica, sans-serif;}
+.login-header{
+    margin: 5%;
+    text-align: center;
+}
+.login-form{
+    width:40%;
+    display: block;
+    margin: auto;
+}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 10%;
+  
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.login-form .login-button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-button:hover {
+  opacity: 0.8;
+}
+
+/*------ Teacher page -------*/
+.teacher-page h1, h3{
+  margin-left: 10%;
+}
+
+.overview-section{
+  background-color: #ececec;
+  width: 80%;
+  margin: auto;
+}
+.row{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2%;
+}
+.teacher-overview-column{
+  text-align: center;
+  padding: 5%;
+}
+.teacher-overview-column button{
+  display: block;
+  text-align: center;
+  background-color: #4CAF50;
+  width: 100px;
+  padding: 5%;
+  margin: auto auto 2%;
+}
+.row a{
+  text-decoration: none;
+  color:white;
+}
+
+/*------ Student page -------*/
+.student-section{
+  background-color: #f3f3f3;
+  width: 50%;
+  height: 300px;
+  margin:10% auto;
+  text-align: center;
+  padding: 1%;
+}
+.student-page input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+.submit-button {
+background-color: #04AA6D;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 50%;
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #004853;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+/* -------register-lecture-page-----*/
+.register-lecture-page{
+text-align: center;
+margin-top: 10%;
+}
+.countdown {
+  /* text-align: center; */
+  border: 5px solid #004853;
+  display:inline;
+  padding: 5px;
+  color: #004853;
+  font-family: Verdana, sans-serif, Arial;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+/*---------Create user--------- */
+.createUser h1{
+  margin-top: -4%;
+  text-align: center;
+}
+#userForm{
+  width: 70%;
+  background-color:rgb(217, 217, 217) ;
+  margin: auto;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+}
+
+#userForm input,select{
+  border: none;
+  border-radius: 15px;
+}
+input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+select#Role{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.createUser table{
+ width: 20%;
+ margin-bottom: 2%;
+}
+.courseBtn{
+  width: 50%;
+  padding: 1% 3%;
+  background-color: #04AA6D;
+  color: white;
+  margin: auto;
+  display: block;
+}
