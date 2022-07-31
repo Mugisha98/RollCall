@@ -50,12 +50,13 @@ async function login(req, res) {
     });
   }
 
-  const correct = await bcrypt.compare(password, userToLogin.passwordHash);
+  //const correct = await user.compare(password, userToLogin.passwordHash);
+  //const correct = await bcrypt.compare(password, userToLogin.passwordHash);
 
-  if (!correct) {
+  if (!password === userToLogin.passwordHash) {
     return res.status(401).json({
       status: "error",
-      message: "Incorrect email and password combination",
+      message: "Incorrect password",
     });
   }
 
@@ -119,12 +120,13 @@ async function createUser(req, res) {
   }
 
   // Check if password is acceptable
-  if (!passwordRegExpr.test(user.password)) {
-    return res.status(400).json({ message: "Passwords must follow following rules: 8-30 characters and must contain at least 1 uppercase, 1 lowercase and 1 number" });
-  }
+  // if (!passwordRegExpr.test(user.password)) {
+  //   return res.status(400).json({ message: "Passwords must follow following rules: 8-30 characters and must contain at least 1 uppercase, 1 lowercase and 1 number" });
+  // }
 
   // hash password
-  const passwordHash = await bcrypt.hash(user.password, 10); 
+  const passwordHash = await hash(user.password, 10); 
+  //const passwordHash = await bcrypt.hash(user.password, 10); 
 
   const newUser = new User({
     firstName: req.body.user.firstName,
