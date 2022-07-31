@@ -1,6 +1,6 @@
-# Role Call System
+# Roll Call System
 
-Role Call System project for KEA.
+Roll Call System project for KEA.
 
 ---
 ## Requirements
