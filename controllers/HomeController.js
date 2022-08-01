@@ -132,7 +132,7 @@ async function checkSubmittedCode(req, res) {
 
   await foundCourse.save();
 
-  res.json({ msg: "success" });
+  res.json({ msg: alert("You're now registred at" + courseName) });
 }
 
 module.exports = {

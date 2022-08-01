@@ -125,13 +125,13 @@ async function createUser(req, res) {
   // }
 
   // hash password
-  const passwordHash = await hash(user.password, 10); 
+  // const passwordHash = await hash(user.password, 10); 
   //const passwordHash = await bcrypt.hash(user.password, 10); 
 
   const newUser = new User({
     firstName: req.body.user.firstName,
     lastName: req.body.user.lastName,
-    passwordHash: passwordHash,
+    passwordHash: req.body.user.password,
     email: req.body.user.email,
     role: req.body.user.role,
     courses: req.body.user.courses

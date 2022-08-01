@@ -16,7 +16,7 @@ $(() => {
 
                 body += "<h2>" + courses.courseName + "</h2>";
                 body += "<a class='btn btn-success d-block w-50  mx-auto mb-3' href='/registerLecture\?courseName="+ courses.courseName +"'>  Register </a>";
-                body += "<a class='btn btn-success d-block w-50  mx-auto' href='/statisticsPage?id="+ courses._id+"'>Statistics</a>";
+                body += "<a class='btn btn-primary d-block w-50  mx-auto' href='/statisticsPage?id="+ courses._id+"'>Statistics</a>";
                 body += "</div>"
 
                 $(".overview-section .row").append(body);

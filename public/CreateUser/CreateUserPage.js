@@ -70,7 +70,7 @@ function buildTable(courses) {
 }
 
 async function createUser() {
-  const responseText = document.getElementById("response-status");
+ 
 
   // get checked courses
   const courses = [];
@@ -96,7 +96,7 @@ async function createUser() {
       data: JSON.stringify({ user: formData }),
     }).done(function (data) {
       console.log(data);
-      responseText.innerText = "Success";
+      alert(formData.firstName + " Succesfully created");
     });
   } catch (error) {
     console.log(error);
