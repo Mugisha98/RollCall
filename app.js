@@ -40,7 +40,7 @@ function app() {
         studentAmount:22,
         teacherName:"John"
     })
-    course.save().then(console.log(course));
+    // course.save().then(console.log(course));
     
     //app.use(express.json());
     app.use(cookieParser());
